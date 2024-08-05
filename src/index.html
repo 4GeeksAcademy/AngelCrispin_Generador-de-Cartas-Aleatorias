@@ -14,15 +14,28 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <h1 class="mt-5">Random Card Generator</h1>
+      <div id="cardContent">
+        <div class="row mt-5 mb-5">
+          <div class="col-2">
+            Width
+          </div>
+          <div class="col-4">
+            <input type="number" min="1" class="config" id="cardWidth" />
+          </div>
+          <div class="col-2">
+            Height
+          </div>
+          <div class="col-4">
+            <input type="number" min="1" class="config" id="cardHeight" />
+          </div>
+        </div>
+        <div class="row mt-5 mb-5">
+          <button id="newCard" type="button" class="btn btn-warning">
+            New Card
+          </button>
+        </div>
+        <div id="cardPlay"></div>
       </div>
     </div>
   </body>
